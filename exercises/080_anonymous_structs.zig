@@ -48,13 +48,15 @@ pub fn main() void {
     // * circle1 should hold i32 integers
     // * circle2 should hold f32 floats
     //
-    var circle1 = ??? {
+    const Circle1 = Circle(i32);
+    var circle1 = Circle1{
         .center_x = 25,
         .center_y = 70,
         .radius = 15,
     };
 
-    var circle2 = ??? {
+    const Circle2 = Circle(f32);
+    var circle2 = Circle2{
         .center_x = 25.234,
         .center_y = 70.999,
         .radius = 15.714,
